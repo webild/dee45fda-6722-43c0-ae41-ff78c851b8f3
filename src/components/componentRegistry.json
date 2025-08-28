@@ -1,0 +1,3375 @@
+[
+  {
+    "import": "import { SiteThemeProvider } from '@/components/sections/ThemeProvider';",
+    "name": "SiteThemeProvider",
+    "path": "@/components/sections/ThemeProvider",
+    "props": {
+      "theme": "{\n        styleVariant: 'funAndTrendy' | 'futuristicAndOutOfBox',\n        colorTemplate: 1 | 2,\n        textAnimation: 'slide' | 'rotate' | 'highlight' | 'blur' | 'scale' | 'expand' | 'flip' | 'none'\n      }",
+      "children": "React.ReactNode"
+    },
+    "example": "<SiteThemeProvider \n  theme={{ \n    styleVariant: 'funAndTrendy',\n    colorTemplate: 1,\n    textAnimation: 'slide'\n  }}>\n  <PlayfulHero />\n  <PlayfulAbout />\n  {/* Other sections */}\n</SiteThemeProvider>"
+  },
+  {
+    "import": "import BentoAccordion from '@/components/accordions/BentoAccordion';",
+    "name": "BentoAccordion",
+    "path": "@/components/accordions/BentoAccordion",
+    "propsSchema": {
+      "items": "Array<{ title: string; content: string; }>",
+      "title": "string",
+      "className": "string",
+      "containerClassName": "string",
+      "titleClassName": "string",
+      "gridClassName": "string",
+      "itemClassName": "string",
+      "itemTitleClassName": "string",
+      "itemIconContainerClassName": "string",
+      "itemIconClassName": "string",
+      "itemContentClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "content": "string"
+          }
+        ],
+        "title": "Title",
+        "className": "custom-class",
+        "containerClassName": "string",
+        "titleClassName": "string",
+        "gridClassName": "string",
+        "itemClassName": "string",
+        "itemTitleClassName": "string",
+        "itemIconContainerClassName": "string",
+        "itemIconClassName": "string",
+        "itemContentClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import ImageAccordion from '@/components/accordions/ImageAccordion';",
+    "name": "ImageAccordion",
+    "path": "@/components/accordions/ImageAccordion",
+    "propsSchema": {
+      "items": "Array<{ title: string; content: string; }>",
+      "imageSrc": "string",
+      "imageAlt": "string",
+      "title": "string",
+      "className": "string",
+      "titleClassName": "string",
+      "gridClassName": "string",
+      "imageContainerClassName": "string",
+      "imageClassName": "string",
+      "accordionContainerClassName": "string",
+      "itemClassName": "string",
+      "itemTitleClassName": "string",
+      "itemIconContainerClassName": "string",
+      "itemIconClassName": "string",
+      "itemContentClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "content": "string"
+          }
+        ],
+        "imageSrc": "/images/logo.svg",
+        "imageAlt": "string",
+        "title": "Title",
+        "className": "custom-class",
+        "titleClassName": "string",
+        "gridClassName": "string",
+        "imageContainerClassName": "string",
+        "imageClassName": "string",
+        "accordionContainerClassName": "string",
+        "itemClassName": "string",
+        "itemTitleClassName": "string",
+        "itemIconContainerClassName": "string",
+        "itemIconClassName": "string",
+        "itemContentClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import PlainAccordion from '@/components/accordions/PlainAccordion';",
+    "name": "PlainAccordion",
+    "path": "@/components/accordions/PlainAccordion",
+    "propsSchema": {
+      "items": "Array<{ title: string; content: string; }>",
+      "title": "string",
+      "className": "string",
+      "titleClassName": "string",
+      "dividerClassName": "string",
+      "itemClassName": "string",
+      "itemTitleClassName": "string",
+      "itemIconContainerClassName": "string",
+      "itemIconClassName": "string",
+      "itemContentClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "content": "string"
+          }
+        ],
+        "title": "Title",
+        "className": "custom-class",
+        "titleClassName": "string",
+        "dividerClassName": "string",
+        "itemClassName": "string",
+        "itemTitleClassName": "string",
+        "itemIconContainerClassName": "string",
+        "itemIconClassName": "string",
+        "itemContentClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import RegularAccordion from '@/components/accordions/RegularAccordion';",
+    "name": "RegularAccordion",
+    "path": "@/components/accordions/RegularAccordion",
+    "propsSchema": {
+      "items": "Array<{ title: string; content: string; }>",
+      "title": "string",
+      "className": "string",
+      "titleClassName": "string",
+      "itemClassName": "string",
+      "itemTitleClassName": "string",
+      "itemIconContainerClassName": "string",
+      "itemIconClassName": "string",
+      "itemContentClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "content": "string"
+          }
+        ],
+        "title": "Title",
+        "className": "custom-class",
+        "titleClassName": "string",
+        "itemClassName": "string",
+        "itemTitleClassName": "string",
+        "itemIconContainerClassName": "string",
+        "itemIconClassName": "string",
+        "itemContentClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import Accordion from '@/components/accordions/SharedAccordion';",
+    "name": "Accordion",
+    "path": "@/components/accordions/SharedAccordion",
+    "propsSchema": {
+      "index": "number",
+      "isActive": "boolean",
+      "onToggle": "(index: number) => void",
+      "title": "string",
+      "content": "string",
+      "className": "string",
+      "titleClassName": "string",
+      "iconContainerClassName": "string",
+      "iconClassName": "string",
+      "contentClassName": "string"
+    },
+    "example": [
+      {
+        "index": 1,
+        "isActive": true,
+        "onToggle": "() => {}",
+        "title": "Title",
+        "content": "string",
+        "className": "custom-class",
+        "titleClassName": "string",
+        "iconContainerClassName": "string",
+        "iconClassName": "string",
+        "contentClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import SideAccordion from '@/components/accordions/SideAccordion';",
+    "name": "SideAccordion",
+    "path": "@/components/accordions/SideAccordion",
+    "propsSchema": {
+      "items": "Array<{ title: string; content: string; }>",
+      "title": "string",
+      "description": "string",
+      "className": "string",
+      "gridClassName": "string",
+      "sideContainerClassName": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string",
+      "accordionContainerClassName": "string",
+      "dividerClassName": "string",
+      "itemClassName": "string",
+      "itemTitleClassName": "string",
+      "itemIconContainerClassName": "string",
+      "itemIconClassName": "string",
+      "itemContentClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "content": "string"
+          }
+        ],
+        "title": "Title",
+        "description": "Description",
+        "className": "custom-class",
+        "gridClassName": "string",
+        "sideContainerClassName": "string",
+        "titleClassName": "string",
+        "descriptionClassName": "string",
+        "accordionContainerClassName": "string",
+        "dividerClassName": "string",
+        "itemClassName": "string",
+        "itemTitleClassName": "string",
+        "itemIconContainerClassName": "string",
+        "itemIconClassName": "string",
+        "itemContentClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import BgRadialGradient from '@/components/background/BgRadialGradient';",
+    "name": "BgRadialGradient",
+    "path": "@/components/background/BgRadialGradient",
+    "propsSchema": {},
+    "example": [
+      {}
+    ]
+  },
+  {
+    "import": "import { BorderFillBackground } from '@/components/background/BorderFillBackground';",
+    "name": "BorderFillBackground",
+    "path": "@/components/background/BorderFillBackground",
+    "propsSchema": {
+      "rx": "number",
+      "ry": "number",
+      "strokeColor": "string",
+      "baseStrokeColor": "string",
+      "fillColor": "string",
+      "strokeWidth": "number",
+      "scrollTriggerOptions": "{ start: string; end: string; scrub: number | boolean; }",
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "rx": 1,
+        "ry": 1,
+        "strokeColor": "string",
+        "baseStrokeColor": "string",
+        "fillColor": "string",
+        "strokeWidth": 1,
+        "scrollTriggerOptions": {
+          "start": "string",
+          "end": "string",
+          "scrub": null
+        },
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import { CanvasRevealEffect } from '@/components/background/CanvasRevealEffect';",
+    "name": "CanvasRevealEffect",
+    "path": "@/components/background/CanvasRevealEffect",
+    "propsSchema": {
+      "colors": "Array<Array<number>>",
+      "opacities": "Array<number>",
+      "totalSize": "number",
+      "dotSize": "number",
+      "shader": "string",
+      "center": "Array<'x' | 'y'>"
+    },
+    "example": [
+      {
+        "colors": [
+          [
+            1
+          ]
+        ],
+        "opacities": [
+          1
+        ],
+        "totalSize": 1,
+        "dotSize": 1,
+        "shader": "string",
+        "center": [
+          "x"
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import { CardPattern } from '@/components/background/CardPattern';",
+    "name": "CardPattern",
+    "path": "@/components/background/CardPattern",
+    "propsSchema": {
+      "mouseX": "MotionValue<number>",
+      "mouseY": "MotionValue<number>",
+      "randomString": "string",
+      "isActive": "boolean",
+      "gradientClassName": "string"
+    },
+    "example": [
+      {
+        "mouseX": null,
+        "mouseY": null,
+        "randomString": "string",
+        "isActive": true,
+        "gradientClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import { GlowingEffect } from '@/components/background/GlowingEffect';",
+    "name": "GlowingEffect",
+    "path": "@/components/background/GlowingEffect",
+    "propsSchema": {
+      "blur": "number",
+      "inactiveZone": "number",
+      "proximity": "number",
+      "spread": "number",
+      "variant": "\"default\" | \"white\"",
+      "glow": "boolean",
+      "className": "string",
+      "disabled": "boolean",
+      "movementDuration": "number",
+      "borderWidth": "number"
+    },
+    "example": [
+      {
+        "blur": 1,
+        "inactiveZone": 1,
+        "proximity": 1,
+        "spread": 1,
+        "variant": "default",
+        "glow": true,
+        "className": "custom-class",
+        "disabled": true,
+        "movementDuration": 1,
+        "borderWidth": 1
+      }
+    ]
+  },
+  {
+    "import": "import SideGlowGradientBackground from '@/components/background/SideGlowGradientBackground';",
+    "name": "SideGlowGradientBackground",
+    "path": "@/components/background/SideGlowGradientBackground",
+    "propsSchema": {
+      "radialColor": "string",
+      "linearColor": "string",
+      "radialOpacity": "string",
+      "linearOpacity": "string",
+      "linearOpacityMobile": "string",
+      "className": "string",
+      "inset": "string",
+      "rounded": "string"
+    },
+    "example": [
+      {
+        "radialColor": "string",
+        "linearColor": "string",
+        "radialOpacity": "string",
+        "linearOpacity": "string",
+        "linearOpacityMobile": "string",
+        "className": "custom-class",
+        "inset": "string",
+        "rounded": "string"
+      }
+    ]
+  },
+  {
+    "import": "import Spotlight from '@/components/background/Spotlight';",
+    "name": "Spotlight",
+    "path": "@/components/background/Spotlight",
+    "propsSchema": {
+      "className": "string",
+      "spotlightClassName": "string",
+      "width": "string",
+      "height": "string",
+      "left": "string",
+      "top": "string",
+      "rotate": "string",
+      "color": "string",
+      "blur": "string",
+      "opacity": "number",
+      "mobileWidth": "string",
+      "mobileHeight": "string",
+      "mobileLeft": "string",
+      "mobileTop": "string",
+      "mobileRotate": "string"
+    },
+    "example": [
+      {
+        "className": "custom-class",
+        "spotlightClassName": "string",
+        "width": "string",
+        "height": "string",
+        "left": "string",
+        "top": "string",
+        "rotate": "string",
+        "color": "string",
+        "blur": "string",
+        "opacity": 1,
+        "mobileWidth": "string",
+        "mobileHeight": "string",
+        "mobileLeft": "string",
+        "mobileTop": "string",
+        "mobileRotate": "string"
+      }
+    ]
+  },
+  {
+    "import": "import AuroraBackground from '@/components/background/auroraBackground/AuroraBackground';",
+    "name": "AuroraBackground",
+    "path": "@/components/background/auroraBackground/AuroraBackground",
+    "propsSchema": {
+      "className": "string"
+    },
+    "example": [
+      {
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import Bento from '@/components/bento/Bento';",
+    "name": "Bento",
+    "path": "@/components/bento/Bento",
+    "propsSchema": {
+      "items": "Array<{ title: string description: string; }>",
+      "className": "string",
+      "gridClassName": "string",
+      "itemClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": null
+          }
+        ],
+        "className": "custom-class",
+        "gridClassName": "string",
+        "itemClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import ExpandingBento from '@/components/bento/ExpandingBento';",
+    "name": "ExpandingBento",
+    "path": "@/components/bento/ExpandingBento",
+    "propsSchema": {
+      "style": "{ section: { className: string; backgroundColor: string; backgroundPattern: string; spotlight: { className: string; spotlightClassName: string; width: string; height: string; left: string; top: string; rotate: string; color: string; blur: string; opacity: number; mobileWidth: string; mobileHeight: string; mobileLeft: string; mobileTop: string; mobileRotate: string; }; }; title: { text: string; className: string; shadowColor: string; shadowOffset: string; animationProps: { duration: number; stagger: number; start: string; end: string; variant: 'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'; }; gradientColors: { from: string; to: string; }; }; description: { text: string; className: string; }; bento: { items: Array<{ value: string; description: string; longDescription: string; icon: LucideIcon; button: { variant: \"side\" | \"none\" | \"bottom\"; className: string; childClassName: string; iconClassName: string; }; }>; longDescriptionClassName: string; className: string; gridClassName: string; itemClassName: string; valueClassName: string; descriptionClassName: string; gradientColors: { from: string; to: string; }; iconClassName: string; iconContainerClassName: string; button: { className: string; childClassName: string; iconClassName: string; variant: 'side' | 'none' | 'bottom'; }; gradientClassName: string; }; expandingCards: { cardClassName: string; activeCardClassName: string; inactiveCardClassName: string; numberClassName: string; titleClassName: string; descriptionClassName: string; buttonType: \"pushable\" | \"slide\" | \"plus\"; buttonClassName: string; buttonContentClassName: string; buttonIconClassName: string; }; }",
+      "cardItems": "Array<{ id: number; title: string; description: string; }>"
+    },
+    "example": [
+      {
+        "style": {
+          "section": {
+            "className": "string",
+            "backgroundColor": "string",
+            "backgroundPattern": "string",
+            "spotlight": {
+              "className": "string",
+              "spotlightClassName": "string",
+              "width": "string",
+              "height": "string",
+              "left": "string",
+              "top": "string",
+              "rotate": "string",
+              "color": "string",
+              "blur": "string",
+              "opacity": 1,
+              "mobileWidth": "string",
+              "mobileHeight": "string",
+              "mobileLeft": "string",
+              "mobileTop": "string",
+              "mobileRotate": "string"
+            }
+          },
+          "title": {
+            "text": "string",
+            "className": "string",
+            "shadowColor": "string",
+            "shadowOffset": "string",
+            "animationProps": {
+              "duration": 1,
+              "stagger": 1,
+              "start": "string",
+              "end": "string",
+              "variant": "scrub"
+            },
+            "gradientColors": {
+              "from": "string",
+              "to": "string"
+            }
+          },
+          "description": {
+            "text": "string",
+            "className": "string"
+          },
+          "bento": {
+            "items": [
+              {
+                "value": "string",
+                "description": "string",
+                "longDescription": "string",
+                "icon": null,
+                "button": {
+                  "variant": "side",
+                  "className": "string",
+                  "childClassName": "string",
+                  "iconClassName": "string"
+                }
+              }
+            ],
+            "longDescriptionClassName": "string",
+            "className": "string",
+            "gridClassName": "string",
+            "itemClassName": "string",
+            "valueClassName": "string",
+            "descriptionClassName": "string",
+            "gradientColors": {
+              "from": "string",
+              "to": "string"
+            },
+            "iconClassName": "string",
+            "iconContainerClassName": "string",
+            "button": {
+              "className": "string",
+              "childClassName": "string",
+              "iconClassName": "string",
+              "variant": "side"
+            },
+            "gradientClassName": "string"
+          },
+          "expandingCards": {
+            "cardClassName": "string",
+            "activeCardClassName": "string",
+            "inactiveCardClassName": "string",
+            "numberClassName": "string",
+            "titleClassName": "string",
+            "descriptionClassName": "string",
+            "buttonType": "pushable",
+            "buttonClassName": "string",
+            "buttonContentClassName": "string",
+            "buttonIconClassName": "string"
+          }
+        },
+        "cardItems": [
+          {
+            "id": 1,
+            "title": "string",
+            "description": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import KPIBento from '@/components/bento/KPIBento';",
+    "name": "KPIBento",
+    "path": "@/components/bento/KPIBento",
+    "propsSchema": {
+      "items": "Array<{ value: string description: string longDescription?: string icon?: LucideIcon, button?: { variant?: \"side\" | \"none\" | \"bottom\" className?: string childClassName?: string iconClassName?: string }; }>",
+      "className": "string",
+      "gridClassName": "string",
+      "itemClassName": "string",
+      "valueClassName": "string",
+      "descriptionClassName": "string",
+      "longDescriptionClassName": "string",
+      "iconContainerClassName": "string",
+      "iconClassName": "string",
+      "color": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "value": null
+          }
+        ],
+        "className": "custom-class",
+        "gridClassName": "string",
+        "itemClassName": "string",
+        "valueClassName": "string",
+        "descriptionClassName": "string",
+        "longDescriptionClassName": "string",
+        "iconContainerClassName": "string",
+        "iconClassName": "string",
+        "color": "string"
+      }
+    ]
+  },
+  {
+    "import": "import PricingBento from '@/components/bento/PricingBento';",
+    "name": "PricingBento",
+    "path": "@/components/bento/PricingBento",
+    "propsSchema": {
+      "items": "Array<{ badge: string badgeIcon?: LucideIcon price: string subtitle?: string features?: Array<string>; }>",
+      "className": "string",
+      "gridClassName": "string",
+      "itemClassName": "string",
+      "badgeClassName": "string",
+      "priceClassName": "string",
+      "subtitleClassName": "string",
+      "featuresClassName": "string",
+      "featureItemClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "badge": "string"
+          }
+        ],
+        "className": "custom-class",
+        "gridClassName": "string",
+        "itemClassName": "string",
+        "badgeClassName": "string",
+        "priceClassName": "string",
+        "subtitleClassName": "string",
+        "featuresClassName": "string",
+        "featureItemClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import SimpleHowToBuyBento from '@/components/bento/SimpleHowToBuyBento';",
+    "name": "SimpleHowToBuyBento",
+    "path": "@/components/bento/SimpleHowToBuyBento",
+    "propsSchema": {
+      "items": "Array<{ title: string; description: string; icon: LucideIcon; }>",
+      "className": "string",
+      "gridClassName": "string",
+      "itemClassName": "string",
+      "iconClassName": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "description": "string",
+            "icon": null
+          }
+        ],
+        "className": "custom-class",
+        "gridClassName": "string",
+        "itemClassName": "string",
+        "iconClassName": "string",
+        "titleClassName": "string",
+        "descriptionClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import SimpleKPIBento from '@/components/bento/SimpleKPIBento';",
+    "name": "SimpleKPIBento",
+    "path": "@/components/bento/SimpleKPIBento",
+    "propsSchema": {
+      "items": "Array<{ value: string description: string longDescription?: string icon?: LucideIcon, button?: { variant?: \"side\" | \"none\" | \"bottom\" className?: string childClassName?: string iconClassName?: string }; }>",
+      "className": "string",
+      "gridClassName": "string",
+      "itemClassName": "string",
+      "valueClassName": "string",
+      "descriptionClassName": "string",
+      "gradientColors": "{ from: string; to: string; }"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "value": null
+          }
+        ],
+        "className": "custom-class",
+        "gridClassName": "string",
+        "itemClassName": "string",
+        "valueClassName": "string",
+        "descriptionClassName": "string",
+        "gradientColors": {
+          "from": "string",
+          "to": "string"
+        }
+      }
+    ]
+  },
+  {
+    "import": "import SimpleStepsBento from '@/components/bento/SimpleStepsBento';",
+    "name": "SimpleStepsBento",
+    "path": "@/components/bento/SimpleStepsBento",
+    "propsSchema": {
+      "items": "Array<{ title: string description: string; }>",
+      "className": "string",
+      "containerClassName": "string",
+      "stepClassName": "string",
+      "numberClassName": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": null
+          }
+        ],
+        "className": "custom-class",
+        "containerClassName": "string",
+        "stepClassName": "string",
+        "numberClassName": "string",
+        "titleClassName": "string",
+        "descriptionClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import BorderFillBento from '@/components/bento/borderFillBento/BorderFillBento';",
+    "name": "BorderFillBento",
+    "path": "@/components/bento/borderFillBento/BorderFillBento",
+    "propsSchema": {
+      "items": "Array<BorderFillItemType>",
+      "className": "string",
+      "rowClassName": "string",
+      "itemClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          null
+        ],
+        "className": "custom-class",
+        "rowClassName": "string",
+        "itemClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import BorderFillItem from '@/components/bento/borderFillBento/BorderFillItem';",
+    "name": "BorderFillItem",
+    "path": "@/components/bento/borderFillBento/BorderFillItem",
+    "propsSchema": {
+      "item": "{ icon: LucideIcon title: string description: string; }",
+      "rowIndex": "number",
+      "itemIndex": "number",
+      "className": "string"
+    },
+    "example": [
+      {
+        "item": {
+          "icon": null
+        },
+        "rowIndex": 1,
+        "itemIndex": 1,
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import GalleryBento from '@/components/bento/galleryBento/GalleryBento';",
+    "name": "GalleryBento",
+    "path": "@/components/bento/galleryBento/GalleryBento",
+    "propsSchema": {
+      "items": "Array<{ title: string image: string; }>",
+      "className": "string",
+      "gridClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": null
+          }
+        ],
+        "className": "custom-class",
+        "gridClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import GalleryItem from '@/components/bento/galleryBento/GalleryItem';",
+    "name": "GalleryItem",
+    "path": "@/components/bento/galleryBento/GalleryItem",
+    "propsSchema": {
+      "item": "{ title: string image: string; }",
+      "layoutClass": "string",
+      "dimensions": "{ width: number; height: number; }",
+      "priority": "boolean"
+    },
+    "example": [
+      {
+        "item": {
+          "title": null
+        },
+        "layoutClass": "string",
+        "dimensions": {
+          "width": 1,
+          "height": 1
+        },
+        "priority": true
+      }
+    ]
+  },
+  {
+    "import": "import GlowingBento from '@/components/bento/glowingBento/GlowingBento';",
+    "name": "GlowingBento",
+    "path": "@/components/bento/glowingBento/GlowingBento",
+    "propsSchema": {
+      "items": "Array<{ icon: LucideIcon title: string description: string; }>",
+      "className": "string",
+      "rowClassName": "string",
+      "itemClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "icon": null
+          }
+        ],
+        "className": "custom-class",
+        "rowClassName": "string",
+        "itemClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import GlowingItem from '@/components/bento/glowingBento/GlowingItem';",
+    "name": "GlowingItem",
+    "path": "@/components/bento/glowingBento/GlowingItem",
+    "propsSchema": {
+      "item": "{ icon: LucideIcon title: string description: string; }",
+      "rowIndex": "number",
+      "itemIndex": "number",
+      "className": "string"
+    },
+    "example": [
+      {
+        "item": {
+          "icon": null
+        },
+        "rowIndex": 1,
+        "itemIndex": 1,
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import InfoRevealBento from '@/components/bento/infoRevealBento/InfoRevealBento';",
+    "name": "InfoRevealBento",
+    "path": "@/components/bento/infoRevealBento/InfoRevealBento",
+    "propsSchema": {
+      "items": "Array<{ id: string; title: string; description: string; imageSrc: string; }>",
+      "enableHoverAnimation": "boolean",
+      "showImages": "boolean",
+      "className": "string",
+      "gridClassName": "string",
+      "itemClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "id": "string",
+            "title": "string",
+            "description": "string",
+            "imageSrc": "string"
+          }
+        ],
+        "enableHoverAnimation": true,
+        "showImages": true,
+        "className": "custom-class",
+        "gridClassName": "string",
+        "itemClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import InfoRevealBentoItem from '@/components/bento/infoRevealBento/InfoRevealBentoItem';",
+    "name": "InfoRevealBentoItem",
+    "path": "@/components/bento/infoRevealBento/InfoRevealBentoItem",
+    "propsSchema": {
+      "item": "{ id: string title: string description: string imageSrc: string; }",
+      "index": "number",
+      "isMobile": "boolean",
+      "enableHoverAnimation": "boolean",
+      "showImages": "boolean",
+      "totalItems": "number",
+      "className": "string"
+    },
+    "example": [
+      {
+        "item": {
+          "id": null
+        },
+        "index": 1,
+        "isMobile": true,
+        "enableHoverAnimation": true,
+        "showImages": true,
+        "totalItems": 1,
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import PatternBento from '@/components/bento/patternBento/PatternBento';",
+    "name": "PatternBento",
+    "path": "@/components/bento/patternBento/PatternBento",
+    "propsSchema": {
+      "items": "Array<{ icon: LucideIcon value: string description?: string; }>",
+      "className": "string",
+      "rowClassName": "string",
+      "itemClassName": "string",
+      "valueClassName": "string",
+      "descriptionClassName": "string",
+      "gradientClassName": "string",
+      "button": "{ variant: \"none\" | \"side\" | \"bottom\"; className: string; childClassName: string; iconClassName: string; }"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "icon": null
+          }
+        ],
+        "className": "custom-class",
+        "rowClassName": "string",
+        "itemClassName": "string",
+        "valueClassName": "string",
+        "descriptionClassName": "string",
+        "gradientClassName": "string",
+        "button": {
+          "variant": "none",
+          "className": "string",
+          "childClassName": "string",
+          "iconClassName": "string"
+        }
+      }
+    ]
+  },
+  {
+    "import": "import PatternItem from '@/components/bento/patternBento/PatternItem';",
+    "name": "PatternItem",
+    "path": "@/components/bento/patternBento/PatternItem",
+    "propsSchema": {
+      "item": "{ icon: LucideIcon value: string description?: string; }",
+      "rowIndex": "number",
+      "itemIndex": "number",
+      "className": "string,",
+      "valueClassName": "string,",
+      "descriptionClassName": "string",
+      "button": "{ variant: \"none\" | \"side\" | \"bottom\"; className: string; childClassName: string; iconClassName: string; }",
+      "gradientClassName": "string"
+    },
+    "example": [
+      {
+        "item": {
+          "icon": null
+        },
+        "rowIndex": 1,
+        "itemIndex": 1,
+        "className": "custom-class",
+        "valueClassName": null,
+        "descriptionClassName": "string",
+        "button": {
+          "variant": "none",
+          "className": "string",
+          "childClassName": "string",
+          "iconClassName": "string"
+        },
+        "gradientClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import RevealBento from '@/components/bento/revealBento/RevealBento';",
+    "name": "RevealBento",
+    "path": "@/components/bento/revealBento/RevealBento",
+    "propsSchema": {
+      "items": "Array<{ icon: LucideIcon text: string; }>",
+      "className": "string",
+      "rowClassName": "string",
+      "itemClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "icon": null
+          }
+        ],
+        "className": "custom-class",
+        "rowClassName": "string",
+        "itemClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import RevealItem from '@/components/bento/revealBento/RevealItem';",
+    "name": "RevealItem",
+    "path": "@/components/bento/revealBento/RevealItem",
+    "propsSchema": {
+      "icon": "LucideIcon",
+      "text": "string",
+      "className": "string"
+    },
+    "example": [
+      {
+        "icon": null,
+        "text": "Text",
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import ThreeDBento from '@/components/bento/threeDBento/ThreeDBento';",
+    "name": "ThreeDBento",
+    "path": "@/components/bento/threeDBento/ThreeDBento",
+    "propsSchema": {},
+    "example": [
+      {}
+    ]
+  },
+  {
+    "import": "import ThreeDBentoItem from '@/components/bento/threeDBento/ThreeDBentoItem';",
+    "name": "ThreeDBentoItem",
+    "path": "@/components/bento/threeDBento/ThreeDBentoItem",
+    "propsSchema": {},
+    "example": [
+      {}
+    ]
+  },
+  {
+    "import": "import ArrowButton from '@/components/buttons/ArrowButton';",
+    "name": "ArrowButton",
+    "path": "@/components/buttons/ArrowButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string",
+      "textClassName": "string",
+      "iconClassName": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "textClassName": "string",
+        "iconClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import BubbleButton from '@/components/buttons/BubbleButton';",
+    "name": "BubbleButton",
+    "path": "@/components/buttons/BubbleButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "React.MouseEventHandler<HTMLButtonElement>",
+      "className": "string",
+      "contentClassName": "string",
+      "arrowClassName": "string",
+      "disabled": "boolean",
+      "ariaLabel": "string",
+      "type": "'button' | 'submit' | 'reset'"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "contentClassName": "string",
+        "arrowClassName": "string",
+        "disabled": true,
+        "ariaLabel": "string",
+        "type": "button"
+      }
+    ]
+  },
+  {
+    "import": "import ExpandingButton from '@/components/buttons/ExpandingButton';",
+    "name": "ExpandingButton",
+    "path": "@/components/buttons/ExpandingButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string",
+      "textClassName": "string",
+      "iconClassName": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "textClassName": "string",
+        "iconClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import PushableButton from '@/components/buttons/PushableButton';",
+    "name": "PushableButton",
+    "path": "@/components/buttons/PushableButton",
+    "propsSchema": {
+      "text": "string",
+      "children": "React.ReactNode",
+      "onClick": "() => void",
+      "className": "string",
+      "frontClassName": "string",
+      "disabled": "boolean",
+      "ariaLabel": "string",
+      "type": "\"button\" | \"submit\" | \"reset\"",
+      "variant": "\"bottom\" | \"side\" | \"none\""
+    },
+    "example": [
+      {
+        "text": "Text",
+        "children": "Content",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "frontClassName": "string",
+        "disabled": true,
+        "ariaLabel": "string",
+        "type": "button",
+        "variant": "bottom"
+      }
+    ]
+  },
+  {
+    "import": "import SelectorButton from '@/components/buttons/SelectorButton';",
+    "name": "SelectorButton",
+    "path": "@/components/buttons/SelectorButton",
+    "propsSchema": {
+      "options": "Array<{ value: string; label: React.ReactNode; }>",
+      "activeValue": "string",
+      "onValueChange": "(value: string) => void",
+      "className": "string",
+      "buttonClassName": "string",
+      "hoverClassName": "string"
+    },
+    "example": [
+      {
+        "options": [
+          {
+            "value": "string",
+            "label": "Text"
+          }
+        ],
+        "activeValue": "string",
+        "onValueChange": "() => {}",
+        "className": "custom-class",
+        "buttonClassName": "string",
+        "hoverClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import SlideButton from '@/components/buttons/SlideButton';",
+    "name": "SlideButton",
+    "path": "@/components/buttons/SlideButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string",
+      "contentClassName": "string",
+      "bgColor": "string",
+      "hoverBgColor": "string",
+      "textColor": "string",
+      "hoverTextColor": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "contentClassName": "string",
+        "bgColor": "string",
+        "hoverBgColor": "string",
+        "textColor": "string",
+        "hoverTextColor": "string"
+      }
+    ]
+  },
+  {
+    "import": "import UnderlineButton from '@/components/buttons/UnderlineButton';",
+    "name": "UnderlineButton",
+    "path": "@/components/buttons/UnderlineButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string",
+      "disabled": "boolean",
+      "ariaLabel": "string",
+      "type": "'button' | 'submit' | 'reset'"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "disabled": true,
+        "ariaLabel": "string",
+        "type": "button"
+      }
+    ]
+  },
+  {
+    "import": "import DirectionalHoverButton from '@/components/buttons/directionalHoverButton/DirectionalHoverButton';",
+    "name": "DirectionalHoverButton",
+    "path": "@/components/buttons/directionalHoverButton/DirectionalHoverButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string",
+      "textClassName": "string",
+      "bgClassName": "string",
+      "circleClassName": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "textClassName": "string",
+        "bgClassName": "string",
+        "circleClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import MagneticButton from '@/components/buttons/magneticButton/MagneticButton';",
+    "name": "MagneticButton",
+    "path": "@/components/buttons/magneticButton/MagneticButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string",
+      "strengthFactor": "number"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "strengthFactor": 1
+      }
+    ]
+  },
+  {
+    "import": "import MovingBorder from '@/components/buttons/movingBorderButton/MovingBorder';",
+    "name": "MovingBorder",
+    "path": "@/components/buttons/movingBorderButton/MovingBorder",
+    "propsSchema": {
+      "children": "React.ReactNode",
+      "duration": "number",
+      "rx": "string",
+      "ry": "string"
+    },
+    "example": [
+      {
+        "children": "Content",
+        "duration": 1,
+        "rx": "string",
+        "ry": "string"
+      }
+    ]
+  },
+  {
+    "import": "import MovingBorderButton from '@/components/buttons/movingBorderButton/MovingBorderButton';",
+    "name": "MovingBorderButton",
+    "path": "@/components/buttons/movingBorderButton/MovingBorderButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string",
+      "borderRadius": "string",
+      "containerClassName": "string",
+      "borderClassName": "string",
+      "duration": "number"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "borderRadius": "string",
+        "containerClassName": "string",
+        "borderClassName": "string",
+        "duration": 1
+      }
+    ]
+  },
+  {
+    "import": "import RotatingIconButton from '@/components/buttons/rotatingIconButton/RotatingIconButton';",
+    "name": "RotatingIconButton",
+    "path": "@/components/buttons/rotatingIconButton/RotatingIconButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import ShiftButton from '@/components/buttons/shiftButton/ShiftButton';",
+    "name": "ShiftButton",
+    "path": "@/components/buttons/shiftButton/ShiftButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string",
+      "bgClassName": "string",
+      "textClassName": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "bgClassName": "string",
+        "textClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import StaggerButton from '@/components/buttons/staggerButton/StaggerButton';",
+    "name": "StaggerButton",
+    "path": "@/components/buttons/staggerButton/StaggerButton",
+    "propsSchema": {
+      "text": "string",
+      "onClick": "() => void",
+      "className": "string",
+      "bgClassName": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "onClick": "() => {}",
+        "className": "custom-class",
+        "bgClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import { Carousel } from '@/components/carousels/Carousel';",
+    "name": "Carousel",
+    "path": "@/components/carousels/Carousel",
+    "propsSchema": {
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import { usePrevNextButtons } from '@/components/carousels/EmblaCarouselArrowButtons';",
+    "name": "usePrevNextButtons",
+    "path": "@/components/carousels/EmblaCarouselArrowButtons",
+    "propsSchema": {},
+    "example": [
+      {}
+    ]
+  },
+  {
+    "import": "import { ProgressCarousel } from '@/components/carousels/ProgressCarousel';",
+    "name": "ProgressCarousel",
+    "path": "@/components/carousels/ProgressCarousel",
+    "propsSchema": {
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import { AutoCarousel } from '@/components/carousels/autoCarousel/AutoCarousel';",
+    "name": "AutoCarousel",
+    "path": "@/components/carousels/autoCarousel/AutoCarousel",
+    "propsSchema": {
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import { AutoscrollCarousel } from '@/components/carousels/autoscrollCarousel/AutoscrollCarousel';",
+    "name": "AutoscrollCarousel",
+    "path": "@/components/carousels/autoscrollCarousel/AutoscrollCarousel",
+    "propsSchema": {
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import { DraggableCarousel } from '@/components/carousels/draggableCarousel/DraggableCarousel';",
+    "name": "DraggableCarousel",
+    "path": "@/components/carousels/draggableCarousel/DraggableCarousel",
+    "propsSchema": {
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import { FullscreenCarousel } from '@/components/carousels/fullscreenCarousel/FullscreenCarousel';",
+    "name": "FullscreenCarousel",
+    "path": "@/components/carousels/fullscreenCarousel/FullscreenCarousel",
+    "propsSchema": {
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import { InfiniteCarousel } from '@/components/carousels/infiniteCarousel/InfiniteCarousel';",
+    "name": "InfiniteCarousel",
+    "path": "@/components/carousels/infiniteCarousel/InfiniteCarousel",
+    "propsSchema": {
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import { StackCarousel } from '@/components/carousels/stackCarousel/StackCarousel';",
+    "name": "StackCarousel",
+    "path": "@/components/carousels/stackCarousel/StackCarousel",
+    "propsSchema": {
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import { PageNav } from '@/components/common/PageNav';",
+    "name": "PageNav",
+    "path": "@/components/common/PageNav",
+    "propsSchema": {
+      "position": "'top' | 'bottom'"
+    },
+    "example": [
+      {
+        "position": "top"
+      }
+    ]
+  },
+  {
+    "import": "import MinimalNavbar from '@/components/navigation/MinimalNavbar';",
+    "name": "MinimalNavbar",
+    "path": "@/components/navigation/MinimalNavbar",
+    "propsSchema": {
+      "logoSrc": "string",
+      "logoWidth": "number",
+      "logoHeight": "number",
+      "logoClassName": "string",
+      "buttonText": "string",
+      "onButtonClick": "() => void",
+      "className": "string",
+      "buttonType": "string,",
+      "buttonClassName": "string",
+      "buttonContentClassName": "string",
+      "buttonBgColor": "string",
+      "buttonHoverBgColor": "string",
+      "buttonTextColor": "string",
+      "buttonHoverTextColor": "string"
+    },
+    "example": [
+      {
+        "logoSrc": "string",
+        "logoWidth": 1,
+        "logoHeight": 1,
+        "logoClassName": "string",
+        "buttonText": "string",
+        "onButtonClick": "() => {}",
+        "className": "custom-class",
+        "buttonType": null,
+        "buttonClassName": "string",
+        "buttonContentClassName": "string",
+        "buttonBgColor": "string",
+        "buttonHoverBgColor": "string",
+        "buttonTextColor": "string",
+        "buttonHoverTextColor": "string"
+      }
+    ]
+  },
+  {
+    "import": "import SimpleFloatingNavbar from '@/components/navigation/SimpleFloatingNavbar';",
+    "name": "SimpleFloatingNavbar",
+    "path": "@/components/navigation/SimpleFloatingNavbar",
+    "propsSchema": {
+      "navItems": "Array<{ id: string; name: string; }>",
+      "logoSrc": "string",
+      "logoWidth": "number",
+      "logoHeight": "number",
+      "buttonText": "string",
+      "onButtonClick": "() => void",
+      "className": "string"
+    },
+    "example": [
+      {
+        "navItems": [
+          {
+            "id": "string",
+            "name": "string"
+          }
+        ],
+        "logoSrc": "string",
+        "logoWidth": 1,
+        "logoHeight": 1,
+        "buttonText": "string",
+        "onButtonClick": "() => {}",
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import SimpleNavbar from '@/components/navigation/SimpleNavbar';",
+    "name": "SimpleNavbar",
+    "path": "@/components/navigation/SimpleNavbar",
+    "propsSchema": {
+      "logoSrc": "string",
+      "logoAlt": "string",
+      "leftButtonText": "string",
+      "rightButtonText": "string",
+      "onLeftButtonClick": "() => void",
+      "onRightButtonClick": "() => void",
+      "className": "string",
+      "containerClassName": "string",
+      "logoClassName": "string",
+      "buttonClassName": "string",
+      "buttonContentClassName": "string",
+      "buttonBgColor": "string",
+      "buttonHoverBgColor": "string",
+      "buttonTextColor": "string",
+      "buttonHoverTextColor": "string"
+    },
+    "example": [
+      {
+        "logoSrc": "string",
+        "logoAlt": "string",
+        "leftButtonText": "string",
+        "rightButtonText": "string",
+        "onLeftButtonClick": "() => {}",
+        "onRightButtonClick": "() => {}",
+        "className": "custom-class",
+        "containerClassName": "string",
+        "logoClassName": "string",
+        "buttonClassName": "string",
+        "buttonContentClassName": "string",
+        "buttonBgColor": "string",
+        "buttonHoverBgColor": "string",
+        "buttonTextColor": "string",
+        "buttonHoverTextColor": "string"
+      }
+    ]
+  },
+  {
+    "import": "import AppleStyleNavbar from '@/components/navigation/appleStyleNavbar/AppleStyleNavbar';",
+    "name": "AppleStyleNavbar",
+    "path": "@/components/navigation/appleStyleNavbar/AppleStyleNavbar",
+    "propsSchema": {},
+    "example": [
+      {}
+    ]
+  },
+  {
+    "import": "import ExpandingMenu from '@/components/navigation/expandingMenu/ExpandingMenu';",
+    "name": "ExpandingMenu",
+    "path": "@/components/navigation/expandingMenu/ExpandingMenu",
+    "propsSchema": {
+      "isOpen": "boolean",
+      "onToggle": "() => void",
+      "navItems": "Array<{ id: string; name: string; }>",
+      "onNavClick": "(id: string) => void",
+      "currentPage": "string",
+      "isScrolled": "boolean"
+    },
+    "example": [
+      {
+        "isOpen": true,
+        "onToggle": "() => {}",
+        "navItems": [
+          {
+            "id": "string",
+            "name": "string"
+          }
+        ],
+        "onNavClick": "() => {}",
+        "currentPage": "string",
+        "isScrolled": true
+      }
+    ]
+  },
+  {
+    "import": "import FloatingNavbar from '@/components/navigation/floatingNavbar/FloatingNavbar';",
+    "name": "FloatingNavbar",
+    "path": "@/components/navigation/floatingNavbar/FloatingNavbar",
+    "propsSchema": {
+      "navItems": "Array<{ id: string; name: string; }>",
+      "logoSrc": "string",
+      "logoWidth": "number",
+      "logoHeight": "number",
+      "buttonText": "string",
+      "onButtonClick": "() => void"
+    },
+    "example": [
+      {
+        "navItems": [
+          {
+            "id": "string",
+            "name": "string"
+          }
+        ],
+        "logoSrc": "string",
+        "logoWidth": 1,
+        "logoHeight": 1,
+        "buttonText": "string",
+        "onButtonClick": "() => {}"
+      }
+    ]
+  },
+  {
+    "import": "import MobileMenu from '@/components/navigation/mobileMenu/MobileMenu';",
+    "name": "MobileMenu",
+    "path": "@/components/navigation/mobileMenu/MobileMenu",
+    "propsSchema": {
+      "menuOpen": "boolean",
+      "onMenuToggle": "() => void",
+      "navItems": "Array<{ id: string; name: string; }>",
+      "onNavClick": "(id: string) => void",
+      "children": "React.ReactNode"
+    },
+    "example": [
+      {
+        "menuOpen": true,
+        "onMenuToggle": "() => {}",
+        "navItems": [
+          {
+            "id": "string",
+            "name": "string"
+          }
+        ],
+        "onNavClick": "() => {}",
+        "children": "Content"
+      }
+    ]
+  },
+  {
+    "import": "import SplitNavbar from '@/components/navigation/splitNavbar/SplitNavbar';",
+    "name": "SplitNavbar",
+    "path": "@/components/navigation/splitNavbar/SplitNavbar",
+    "propsSchema": {
+      "logoSrc": "string",
+      "logoWidth": "number",
+      "logoHeight": "number",
+      "buttonText": "string",
+      "onButtonClick": "() => void",
+      "navItems": "Array<{ id: string; name: string; }>",
+      "defaultSelectorValue": "string",
+      "onSelectorChange": "(value: string) => void",
+      "className": "string",
+      "enableScrollDetection": "boolean"
+    },
+    "example": [
+      {
+        "logoSrc": "string",
+        "logoWidth": 1,
+        "logoHeight": 1,
+        "buttonText": "string",
+        "onButtonClick": "() => {}",
+        "navItems": [
+          {
+            "id": "string",
+            "name": "string"
+          }
+        ],
+        "defaultSelectorValue": "string",
+        "onSelectorChange": "() => {}",
+        "className": "custom-class",
+        "enableScrollDetection": true
+      }
+    ]
+  },
+  {
+    "import": "import { useSiteTheme } from '@/components/sections/ThemeProvider';",
+    "name": "useSiteTheme",
+    "path": "@/components/sections/ThemeProvider",
+    "propsSchema": {
+      "children": "React.ReactNode",
+      "theme": "{ styleVariant: StyleVariant; colorTemplate: ColorTemplate; textAnimation: TextAnimation; }"
+    },
+    "example": [
+      {
+        "children": "Content",
+        "theme": {
+          "styleVariant": null,
+          "colorTemplate": null,
+          "textAnimation": null
+        }
+      }
+    ]
+  },
+  {
+    "import": "import MinimalAbout from '@/components/sections/layouts/about/MinimalAbout';",
+    "name": "MinimalAbout",
+    "path": "@/components/sections/layouts/about/MinimalAbout",
+    "propsSchema": {
+      "description": "string"
+    },
+    "example": [
+      {
+        "description": "Description"
+      }
+    ]
+  },
+  {
+    "import": "import MomoCoinAbout from '@/components/sections/layouts/about/Momocoinabout';",
+    "name": "MomoCoinAbout",
+    "path": "@/components/sections/layouts/about/Momocoinabout",
+    "propsSchema": {
+      "title": "string",
+      "descriptions": "Array<string>"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "descriptions": [
+          "string"
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import PudgyAbout from '@/components/sections/layouts/about/PudgyAbout';",
+    "name": "PudgyAbout",
+    "path": "@/components/sections/layouts/about/PudgyAbout",
+    "propsSchema": {
+      "title": "string",
+      "descriptions": "Array<string>"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "descriptions": [
+          "string"
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import StandardAbout from '@/components/sections/layouts/about/StandardAbout';",
+    "name": "StandardAbout",
+    "path": "@/components/sections/layouts/about/StandardAbout",
+    "propsSchema": {
+      "title": "string",
+      "descriptions": "Array<string>"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "descriptions": [
+          "string"
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import BentoFAQ from '@/components/sections/layouts/faq/BentoFAQ';",
+    "name": "BentoFAQ",
+    "path": "@/components/sections/layouts/faq/BentoFAQ",
+    "propsSchema": {
+      "items": "Array<{ title: string; content: string; }>"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "content": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import ImageFAQ from '@/components/sections/layouts/faq/ImageFAQ';",
+    "name": "ImageFAQ",
+    "path": "@/components/sections/layouts/faq/ImageFAQ",
+    "propsSchema": {
+      "items": "Array<{ title: string; content: string; }>"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "content": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import RegularFAQ from '@/components/sections/layouts/faq/RegularFAQ';",
+    "name": "RegularFAQ",
+    "path": "@/components/sections/layouts/faq/RegularFAQ",
+    "propsSchema": {
+      "items": "Array<{ title: string; content: string; }>"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "content": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import FooterLogoComponent from '@/components/sections/layouts/footer/FooterLogoComponent';",
+    "name": "FooterLogoComponent",
+    "path": "@/components/sections/layouts/footer/FooterLogoComponent",
+    "propsSchema": {
+      "logoSrc": "string",
+      "logoAlt": "string",
+      "logoText": "string",
+      "className": "string",
+      "svgClassName": "string"
+    },
+    "example": [
+      {
+        "logoSrc": "string",
+        "logoAlt": "string",
+        "logoText": "string",
+        "className": "custom-class",
+        "svgClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import GradientFooter from '@/components/sections/layouts/footer/GradientFooter';",
+    "name": "GradientFooter",
+    "path": "@/components/sections/layouts/footer/GradientFooter",
+    "propsSchema": {
+      "items": "Array<{ label: string; onClick: () => void; }>"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "label": "string",
+            "onClick": "() => {}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import LogoFooter from '@/components/sections/layouts/footer/LogoFooter';",
+    "name": "LogoFooter",
+    "path": "@/components/sections/layouts/footer/LogoFooter",
+    "propsSchema": {
+      "columns": "Array<{ title: string; items: Array<{ label: string; onClick: () => void; }>; }>"
+    },
+    "example": [
+      {
+        "columns": [
+          {
+            "title": "string",
+            "items": [
+              {
+                "label": "string",
+                "onClick": "() => {}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import MewFooter from '@/components/sections/layouts/footer/MewFooter';",
+    "name": "MewFooter",
+    "path": "@/components/sections/layouts/footer/MewFooter",
+    "propsSchema": {
+      "title": "string"
+    },
+    "example": [
+      {
+        "title": "Title"
+      }
+    ]
+  },
+  {
+    "import": "import RevealFooter from '@/components/sections/layouts/footer/RevealFooter';",
+    "name": "RevealFooter",
+    "path": "@/components/sections/layouts/footer/RevealFooter",
+    "propsSchema": {},
+    "example": [
+      {}
+    ]
+  },
+  {
+    "import": "import SimpleFooter from '@/components/sections/layouts/footer/SimpleFooter';",
+    "name": "SimpleFooter",
+    "path": "@/components/sections/layouts/footer/SimpleFooter",
+    "propsSchema": {
+      "columns": "Array<{ title: string; items: Array<{ label: string; onClick: () => void; }>; }>",
+      "copyrightText": "string",
+      "onPrivacyClick": "() => void"
+    },
+    "example": [
+      {
+        "columns": [
+          {
+            "title": "string",
+            "items": [
+              {
+                "label": "string",
+                "onClick": "() => {}"
+              }
+            ]
+          }
+        ],
+        "copyrightText": "string",
+        "onPrivacyClick": "() => {}"
+      }
+    ]
+  },
+  {
+    "import": "import CyclopsHero from '@/components/sections/layouts/hero/CyclopsHero';",
+    "name": "CyclopsHero",
+    "path": "@/components/sections/layouts/hero/CyclopsHero",
+    "propsSchema": {
+      "title": "string",
+      "subtitle": "string",
+      "primaryButtonText": "string",
+      "secondaryButtonText": "string",
+      "onPrimaryButtonClick": "() => void",
+      "onSecondaryButtonClick": "() => void",
+      "onMenuClick": "() => void",
+      "onContactClick": "() => void"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "subtitle": "Description",
+        "primaryButtonText": "string",
+        "secondaryButtonText": "string",
+        "onPrimaryButtonClick": "() => {}",
+        "onSecondaryButtonClick": "() => {}",
+        "onMenuClick": "() => {}",
+        "onContactClick": "() => {}"
+      }
+    ]
+  },
+  {
+    "import": "import PepeHero from '@/components/sections/layouts/hero/PepeHero';",
+    "name": "PepeHero",
+    "path": "@/components/sections/layouts/hero/PepeHero",
+    "propsSchema": {
+      "title": "string",
+      "subtitle": "string",
+      "contractAddress": "string",
+      "copyButtonText": "string",
+      "copiedText": "string",
+      "onMenuClick": "() => void",
+      "onContactClick": "() => void"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "subtitle": "Description",
+        "contractAddress": "string",
+        "copyButtonText": "string",
+        "copiedText": "string",
+        "onMenuClick": "() => {}",
+        "onContactClick": "() => {}"
+      }
+    ]
+  },
+  {
+    "import": "import PlayfulHero from '@/components/sections/layouts/hero/PlayfulHero';",
+    "name": "PlayfulHero",
+    "path": "@/components/sections/layouts/hero/PlayfulHero",
+    "propsSchema": {
+      "title": "string",
+      "subtitle": "string",
+      "onMenuClick": "() => void",
+      "onContactClick": "() => void"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "subtitle": "Description",
+        "onMenuClick": "() => {}",
+        "onContactClick": "() => {}"
+      }
+    ]
+  },
+  {
+    "import": "import SimpleHero from '@/components/sections/layouts/hero/SimpleHero';",
+    "name": "SimpleHero",
+    "path": "@/components/sections/layouts/hero/SimpleHero",
+    "propsSchema": {
+      "title": "string",
+      "description": "string",
+      "primaryButtonText": "string",
+      "secondaryButtonText": "string"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "primaryButtonText": "string",
+        "secondaryButtonText": "string"
+      }
+    ]
+  },
+  {
+    "import": "import TechyHero from '@/components/sections/layouts/hero/TechyHero';",
+    "name": "TechyHero",
+    "path": "@/components/sections/layouts/hero/TechyHero",
+    "propsSchema": {
+      "title": "string",
+      "description": "string",
+      "tagLabel": "string",
+      "primaryButtonText": "string",
+      "secondaryButtonText": "string"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "tagLabel": "string",
+        "primaryButtonText": "string",
+        "secondaryButtonText": "string"
+      }
+    ]
+  },
+  {
+    "import": "import HowToBuy2D from '@/components/sections/layouts/howtobuy/HowToBuy2D';",
+    "name": "HowToBuy2D",
+    "path": "@/components/sections/layouts/howtobuy/HowToBuy2D",
+    "propsSchema": {
+      "variant": "'reveal' | 'simple'"
+    },
+    "example": [
+      {
+        "variant": "reveal"
+      }
+    ]
+  },
+  {
+    "import": "import HowToBuy3D from '@/components/sections/layouts/howtobuy/HowToBuy3D';",
+    "name": "HowToBuy3D",
+    "path": "@/components/sections/layouts/howtobuy/HowToBuy3D",
+    "propsSchema": {
+      "title": "string",
+      "steps": "Array<{ title: string; description: string; image: string; position: 'left' | 'center' | 'right'; isCenter: boolean; }>"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "steps": [
+          {
+            "title": "string",
+            "description": "string",
+            "image": "string",
+            "position": "left",
+            "isCenter": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import ProcessRoadmapTimeline from '@/components/sections/layouts/roadmap/ProcessRoadmapTimeline';",
+    "name": "ProcessRoadmapTimeline",
+    "path": "@/components/sections/layouts/roadmap/ProcessRoadmapTimeline",
+    "propsSchema": {
+      "items": "Array<{ id: string; title: string; description: string; image: string; items: Array<{ icon: LucideIcon; text: string; }>; reverse: boolean; }>",
+      "className": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "id": "string",
+            "title": "string",
+            "description": "string",
+            "image": "string",
+            "items": [
+              {
+                "icon": null,
+                "text": "string"
+              }
+            ],
+            "reverse": true
+          }
+        ],
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import RoadmapTimeline from '@/components/sections/layouts/roadmap/RoadmapTimeline';",
+    "name": "RoadmapTimeline",
+    "path": "@/components/sections/layouts/roadmap/RoadmapTimeline",
+    "propsSchema": {
+      "items": "Array<{ title: string; description: string; video: string; image: string; }>",
+      "title": "string",
+      "className": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "description": "string",
+            "video": "string",
+            "image": "string"
+          }
+        ],
+        "title": "Title",
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import StackRoadmapTimeline from '@/components/sections/layouts/roadmap/StackRoadmapTimeline';",
+    "name": "StackRoadmapTimeline",
+    "path": "@/components/sections/layouts/roadmap/StackRoadmapTimeline",
+    "propsSchema": {
+      "items": "Array<{ id: number; title: string; description: string; image: string; }>",
+      "className": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "id": 1,
+            "title": "string",
+            "description": "string",
+            "image": "string"
+          }
+        ],
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import YearRoadmapTimeline from '@/components/sections/layouts/roadmap/YearRoadmapTimeline';",
+    "name": "YearRoadmapTimeline",
+    "path": "@/components/sections/layouts/roadmap/YearRoadmapTimeline",
+    "propsSchema": {
+      "items": "Array<{ year: string; title: string; description: string; }>",
+      "className": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "year": "string",
+            "title": "string",
+            "description": "string"
+          }
+        ],
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import Tokenomics from '@/components/sections/layouts/tokenomics/ExpandingTokenomics';",
+    "name": "Tokenomics",
+    "path": "@/components/sections/layouts/tokenomics/ExpandingTokenomics",
+    "propsSchema": {
+      "title": "string",
+      "description": "string",
+      "cardItems": "Array<{ id: number; title: string; description: string; }>"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "cardItems": [
+          {
+            "id": 1,
+            "title": "string",
+            "description": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import Tokenomics from '@/components/sections/layouts/tokenomics/MinimalTokenomics';",
+    "name": "Tokenomics",
+    "path": "@/components/sections/layouts/tokenomics/MinimalTokenomics",
+    "propsSchema": {
+      "title": "string",
+      "description": "string",
+      "kpiItems": "Array<{ value: string; description: string; longDescription: string; icon: LucideIcon; }>"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "kpiItems": [
+          {
+            "value": "string",
+            "description": "string",
+            "longDescription": "string",
+            "icon": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import PatternTokenomics from '@/components/sections/layouts/tokenomics/PatternTokenomics';",
+    "name": "PatternTokenomics",
+    "path": "@/components/sections/layouts/tokenomics/PatternTokenomics",
+    "propsSchema": {
+      "title": "string",
+      "description": "string",
+      "kpiItems": "Array<{ value: string; description: string; icon: LucideIcon; }>"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "kpiItems": [
+          {
+            "value": "string",
+            "description": "string",
+            "icon": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import PudgyTokenomics from '@/components/sections/layouts/tokenomics/PudgyTokenomics';",
+    "name": "PudgyTokenomics",
+    "path": "@/components/sections/layouts/tokenomics/PudgyTokenomics",
+    "propsSchema": {
+      "title": "string",
+      "description": "string",
+      "tokenData": "Array<{ value: string; description: string; }>"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "tokenData": [
+          {
+            "value": "string",
+            "description": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import Tokenomics from '@/components/sections/layouts/tokenomics/SimpleTokenomics';",
+    "name": "Tokenomics",
+    "path": "@/components/sections/layouts/tokenomics/SimpleTokenomics",
+    "propsSchema": {
+      "title": "string",
+      "description": "string",
+      "kpiItems": "Array<{ value: string; description: string; }>"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "kpiItems": [
+          {
+            "value": "string",
+            "description": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import { SparklesCore } from '@/components/sparkles/Sparkles';",
+    "name": "SparklesCore",
+    "path": "@/components/sparkles/Sparkles",
+    "propsSchema": {},
+    "example": [
+      {}
+    ]
+  },
+  {
+    "import": "import AnimatedNumberText from '@/components/text/AnimatedNumberText';",
+    "name": "AnimatedNumberText",
+    "path": "@/components/text/AnimatedNumberText",
+    "propsSchema": {
+      "value": "number",
+      "format": "Omit<Intl.NumberFormatOptions, \"notation\"> & { notation: Exclude<Intl.NumberFormatOptions[\"notation\"], \"scientific\" | \"engineering\">; }",
+      "locales": "Intl.LocalesArgument",
+      "className": "string",
+      "suffix": "string",
+      "prefix": "string"
+    },
+    "example": [
+      {
+        "value": 1,
+        "format": null,
+        "locales": null,
+        "className": "custom-class",
+        "suffix": "string",
+        "prefix": "string"
+      }
+    ]
+  },
+  {
+    "import": "import AnimatedRetroText from '@/components/text/AnimatedRetroText';",
+    "name": "AnimatedRetroText",
+    "path": "@/components/text/AnimatedRetroText",
+    "propsSchema": {
+      "text": "string",
+      "className": "string",
+      "animation": "'slide' | 'rotate' | 'highlight' | 'blur' | 'scale' | 'expand' | 'flip' | 'none'",
+      "shadowColor": "string",
+      "shadowOffset": "string",
+      "animationProps": "{ duration: number; stagger: number; start: string; end: string; variant: 'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'; }",
+      "gradientColors": "{ from: string; to: string; }",
+      "as": "'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "className": "custom-class",
+        "animation": "slide",
+        "shadowColor": "string",
+        "shadowOffset": "string",
+        "animationProps": {
+          "duration": 1,
+          "stagger": 1,
+          "start": "string",
+          "end": "string",
+          "variant": "scrub"
+        },
+        "gradientColors": {
+          "from": "string",
+          "to": "string"
+        },
+        "as": "h1"
+      }
+    ]
+  },
+  {
+    "import": "import BlurText from '@/components/text/BlurText';",
+    "name": "BlurText",
+    "path": "@/components/text/BlurText",
+    "propsSchema": {
+      "text": "string",
+      "children": "React.ReactNode",
+      "className": "string",
+      "duration": "number",
+      "stagger": "number",
+      "start": "string",
+      "end": "string",
+      "variant": "\"scrub\" | \"trigger\" | \"words-scrub\" | \"words-trigger\"",
+      "gradientColors": "{ from: string; to: string; }"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "children": "Content",
+        "className": "custom-class",
+        "duration": 1,
+        "stagger": 1,
+        "start": "string",
+        "end": "string",
+        "variant": "scrub",
+        "gradientColors": {
+          "from": "string",
+          "to": "string"
+        }
+      }
+    ]
+  },
+  {
+    "import": "import ColorRevealText from '@/components/text/ColorRevealText';",
+    "name": "ColorRevealText",
+    "path": "@/components/text/ColorRevealText",
+    "propsSchema": {
+      "text": "string",
+      "className": "string",
+      "charDelay": "number",
+      "charDuration": "number",
+      "colorDelay": "number",
+      "startColor": "string",
+      "colorPercentage": "number",
+      "instant": "boolean",
+      "scrollTrigger": "boolean",
+      "start": "string",
+      "ariaLabel": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "className": "custom-class",
+        "charDelay": 1,
+        "charDuration": 1,
+        "colorDelay": 1,
+        "startColor": "string",
+        "colorPercentage": 1,
+        "instant": true,
+        "scrollTrigger": true,
+        "start": "string",
+        "ariaLabel": "string"
+      }
+    ]
+  },
+  {
+    "import": "import ExpandText from '@/components/text/ExpandText';",
+    "name": "ExpandText",
+    "path": "@/components/text/ExpandText",
+    "propsSchema": {
+      "text": "string",
+      "children": "React.ReactNode",
+      "className": "string",
+      "duration": "number",
+      "stagger": "number",
+      "start": "string",
+      "end": "string",
+      "variant": "'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'",
+      "gradientColors": "{ from: string; to: string; }"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "children": "Content",
+        "className": "custom-class",
+        "duration": 1,
+        "stagger": 1,
+        "start": "string",
+        "end": "string",
+        "variant": "scrub",
+        "gradientColors": {
+          "from": "string",
+          "to": "string"
+        }
+      }
+    ]
+  },
+  {
+    "import": "import FlipText from '@/components/text/FlipText';",
+    "name": "FlipText",
+    "path": "@/components/text/FlipText",
+    "propsSchema": {
+      "text": "string",
+      "children": "React.ReactNode",
+      "className": "string",
+      "duration": "number",
+      "stagger": "number",
+      "start": "string",
+      "end": "string",
+      "variant": "'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'",
+      "ariaLabel": "string",
+      "gradientColors": "{ from: string; to: string; }"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "children": "Content",
+        "className": "custom-class",
+        "duration": 1,
+        "stagger": 1,
+        "start": "string",
+        "end": "string",
+        "variant": "scrub",
+        "ariaLabel": "string",
+        "gradientColors": {
+          "from": "string",
+          "to": "string"
+        }
+      }
+    ]
+  },
+  {
+    "import": "import GradientText from '@/components/text/GradientText';",
+    "name": "GradientText",
+    "path": "@/components/text/GradientText",
+    "propsSchema": {
+      "text": "string",
+      "className": "string",
+      "ariaLabel": "string",
+      "color1": "string",
+      "color2": "string",
+      "color3": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "className": "custom-class",
+        "ariaLabel": "string",
+        "color1": "string",
+        "color2": "string",
+        "color3": "string"
+      }
+    ]
+  },
+  {
+    "import": "import HighlightText from '@/components/text/HighlightText';",
+    "name": "HighlightText",
+    "path": "@/components/text/HighlightText",
+    "propsSchema": {
+      "text": "string",
+      "children": "React.ReactNode",
+      "className": "string",
+      "duration": "number",
+      "stagger": "number",
+      "start": "string",
+      "end": "string",
+      "variant": "'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'",
+      "ariaLabel": "string",
+      "gradientColors": "{ from: string; to: string; }"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "children": "Content",
+        "className": "custom-class",
+        "duration": 1,
+        "stagger": 1,
+        "start": "string",
+        "end": "string",
+        "variant": "scrub",
+        "ariaLabel": "string",
+        "gradientColors": {
+          "from": "string",
+          "to": "string"
+        }
+      }
+    ]
+  },
+  {
+    "import": "import HorizontalText from '@/components/text/HorizontalText';",
+    "name": "HorizontalText",
+    "path": "@/components/text/HorizontalText",
+    "propsSchema": {
+      "text": "string",
+      "className": "string",
+      "direction": "'left' | 'right'",
+      "ariaLabel": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "className": "custom-class",
+        "direction": "left",
+        "ariaLabel": "string"
+      }
+    ]
+  },
+  {
+    "import": "import MaskText from '@/components/text/MaskText';",
+    "name": "MaskText",
+    "path": "@/components/text/MaskText",
+    "propsSchema": {
+      "text": "string",
+      "className": "string",
+      "backgroundSrc": "string",
+      "ariaLabel": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "className": "custom-class",
+        "backgroundSrc": "/images/logo.svg",
+        "ariaLabel": "string"
+      }
+    ]
+  },
+  {
+    "import": "import ParallaxText from '@/components/text/ParallaxText';",
+    "name": "ParallaxText",
+    "path": "@/components/text/ParallaxText",
+    "propsSchema": {
+      "text": "string",
+      "baseVelocity": "number",
+      "className": "string",
+      "textClassName": "string",
+      "ariaLabel": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "baseVelocity": 1,
+        "className": "custom-class",
+        "textClassName": "string",
+        "ariaLabel": "string"
+      }
+    ]
+  },
+  {
+    "import": "import RetroText from '@/components/text/RetroText';",
+    "name": "RetroText",
+    "path": "@/components/text/RetroText",
+    "propsSchema": {
+      "text": "string",
+      "className": "string",
+      "shadowColor": "string",
+      "shadowOffset": "string",
+      "onClick": "() => void",
+      "as": "'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "className": "custom-class",
+        "shadowColor": "string",
+        "shadowOffset": "string",
+        "onClick": "() => {}",
+        "as": "h1"
+      }
+    ]
+  },
+  {
+    "import": "import RotateText from '@/components/text/RotateText';",
+    "name": "RotateText",
+    "path": "@/components/text/RotateText",
+    "propsSchema": {
+      "text": "string",
+      "children": "React.ReactNode",
+      "className": "string",
+      "duration": "number",
+      "stagger": "number",
+      "start": "string",
+      "end": "string",
+      "variant": "'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'",
+      "ariaLabel": "string",
+      "gradientColors": "{ from: string; to: string; }"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "children": "Content",
+        "className": "custom-class",
+        "duration": 1,
+        "stagger": 1,
+        "start": "string",
+        "end": "string",
+        "variant": "scrub",
+        "ariaLabel": "string",
+        "gradientColors": {
+          "from": "string",
+          "to": "string"
+        }
+      }
+    ]
+  },
+  {
+    "import": "import ScaleText from '@/components/text/ScaleText';",
+    "name": "ScaleText",
+    "path": "@/components/text/ScaleText",
+    "propsSchema": {
+      "text": "string",
+      "children": "React.ReactNode",
+      "className": "string",
+      "duration": "number",
+      "stagger": "number",
+      "start": "string",
+      "end": "string",
+      "variant": "'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'",
+      "ariaLabel": "string",
+      "gradientColors": "{ from: string; to: string; }"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "children": "Content",
+        "className": "custom-class",
+        "duration": 1,
+        "stagger": 1,
+        "start": "string",
+        "end": "string",
+        "variant": "scrub",
+        "ariaLabel": "string",
+        "gradientColors": {
+          "from": "string",
+          "to": "string"
+        }
+      }
+    ]
+  },
+  {
+    "import": "import SlideText from '@/components/text/SlideText';",
+    "name": "SlideText",
+    "path": "@/components/text/SlideText",
+    "propsSchema": {
+      "text": "string",
+      "children": "React.ReactNode",
+      "className": "string",
+      "duration": "number",
+      "stagger": "number",
+      "start": "string",
+      "end": "string",
+      "variant": "'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'",
+      "gradientColors": "{ from: string; to: string; }"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "children": "Content",
+        "className": "custom-class",
+        "duration": 1,
+        "stagger": 1,
+        "start": "string",
+        "end": "string",
+        "variant": "scrub",
+        "gradientColors": {
+          "from": "string",
+          "to": "string"
+        }
+      }
+    ]
+  },
+  {
+    "import": "import TextRenderer from '@/components/text/TextRenderer';",
+    "name": "TextRenderer",
+    "path": "@/components/text/TextRenderer",
+    "propsSchema": {
+      "config": "{ text: string; className: string; shadowColor: string; shadowOffset: string; animationProps: { duration: number; stagger: number; start: string; end: string; variant: 'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'; }; gradientColors: { from: string; to: string; }; }",
+      "as": "'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'"
+    },
+    "example": [
+      {
+        "config": {
+          "text": "string",
+          "className": "string",
+          "shadowColor": "string",
+          "shadowOffset": "string",
+          "animationProps": {
+            "duration": 1,
+            "stagger": 1,
+            "start": "string",
+            "end": "string",
+            "variant": "scrub"
+          },
+          "gradientColors": {
+            "from": "string",
+            "to": "string"
+          }
+        },
+        "as": "h1"
+      }
+    ]
+  },
+  {
+    "import": "import WaveText from '@/components/text/WaveText';",
+    "name": "WaveText",
+    "path": "@/components/text/WaveText",
+    "propsSchema": {
+      "text": "string",
+      "className": "string",
+      "primaryColor": "string",
+      "secondaryColor": "string",
+      "start": "string",
+      "stagger": "number",
+      "duration": "number",
+      "ease": "string",
+      "ariaLabel": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "className": "custom-class",
+        "primaryColor": "string",
+        "secondaryColor": "string",
+        "start": "string",
+        "stagger": 1,
+        "duration": 1,
+        "ease": "string",
+        "ariaLabel": "string"
+      }
+    ]
+  },
+  {
+    "import": "import CubeText from '@/components/text/cubeText/CubeText';",
+    "name": "CubeText",
+    "path": "@/components/text/cubeText/CubeText",
+    "propsSchema": {
+      "items": "[string, string, string, string]",
+      "autoPlay": "boolean",
+      "duration": "number",
+      "ariaLabel": "string"
+    },
+    "example": [
+      {
+        "items": null,
+        "autoPlay": true,
+        "duration": 1,
+        "ariaLabel": "string"
+      }
+    ]
+  },
+  {
+    "import": "import HoverGradientText from '@/components/text/hoverGradientText/HoverGradientText';",
+    "name": "HoverGradientText",
+    "path": "@/components/text/hoverGradientText/HoverGradientText",
+    "propsSchema": {
+      "text": "string",
+      "className": "string",
+      "fontSize": "string",
+      "strokeWidth": "number",
+      "ariaLabel": "string"
+    },
+    "example": [
+      {
+        "text": "Text",
+        "className": "custom-class",
+        "fontSize": "string",
+        "strokeWidth": 1,
+        "ariaLabel": "string"
+      }
+    ]
+  },
+  {
+    "import": "import ContentTextbox from '@/components/textbox/ContentTextbox';",
+    "name": "ContentTextbox",
+    "path": "@/components/textbox/ContentTextbox",
+    "propsSchema": {
+      "title": "ReactNode",
+      "description": "ReactNode",
+      "children": "ReactNode",
+      "className": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string",
+      "contentClassName": "string",
+      "disableAnimation": "boolean"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "children": "Content",
+        "className": "custom-class",
+        "titleClassName": "string",
+        "descriptionClassName": "string",
+        "contentClassName": "string",
+        "disableAnimation": true
+      }
+    ]
+  },
+  {
+    "import": "import HorizontalTextbox from '@/components/textbox/HorizontalTextbox';",
+    "name": "HorizontalTextbox",
+    "path": "@/components/textbox/HorizontalTextbox",
+    "propsSchema": {
+      "title": "ReactNode",
+      "description": "ReactNode",
+      "className": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string",
+      "reverseLayout": "boolean",
+      "alignStart": "boolean"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "className": "custom-class",
+        "titleClassName": "string",
+        "descriptionClassName": "string",
+        "reverseLayout": true,
+        "alignStart": true
+      }
+    ]
+  },
+  {
+    "import": "import InlineTextbox from '@/components/textbox/InlineTextbox';",
+    "name": "InlineTextbox",
+    "path": "@/components/textbox/InlineTextbox",
+    "propsSchema": {
+      "title": "ReactNode",
+      "description": "ReactNode",
+      "className": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "className": "custom-class",
+        "titleClassName": "string",
+        "descriptionClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import StandardTextbox from '@/components/textbox/StandardTextbox';",
+    "name": "StandardTextbox",
+    "path": "@/components/textbox/StandardTextbox",
+    "propsSchema": {
+      "title": "ReactNode",
+      "description": "ReactNode",
+      "className": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "className": "custom-class",
+        "titleClassName": "string",
+        "descriptionClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import TaggedTextbox from '@/components/textbox/TaggedTextbox';",
+    "name": "TaggedTextbox",
+    "path": "@/components/textbox/TaggedTextbox",
+    "propsSchema": {
+      "icon": "ReactNode",
+      "label": "ReactNode",
+      "title": "ReactNode",
+      "description": "ReactNode",
+      "children": "ReactNode",
+      "className": "string",
+      "tagClassName": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string",
+      "contentClassName": "string",
+      "disableAnimation": "boolean",
+      "tagLabelClassName": "string"
+    },
+    "example": [
+      {
+        "icon": "Text",
+        "label": "Text",
+        "title": "Title",
+        "description": "Description",
+        "children": "Content",
+        "className": "custom-class",
+        "tagClassName": "string",
+        "titleClassName": "string",
+        "descriptionClassName": "string",
+        "contentClassName": "string",
+        "disableAnimation": true,
+        "tagLabelClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import VerticalTextbox from '@/components/textbox/Verticaltextbox';",
+    "name": "VerticalTextbox",
+    "path": "@/components/textbox/Verticaltextbox",
+    "propsSchema": {
+      "title": "ReactNode",
+      "description": "ReactNode",
+      "className": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string",
+      "reverseLayout": "boolean",
+      "alignStart": "boolean"
+    },
+    "example": [
+      {
+        "title": "Title",
+        "description": "Description",
+        "className": "custom-class",
+        "titleClassName": "string",
+        "descriptionClassName": "string",
+        "reverseLayout": true,
+        "alignStart": true
+      }
+    ]
+  },
+  {
+    "import": "import ThreeDStackTimeline from '@/components/timeline/3DStackTimeline';",
+    "name": "ThreeDStackTimeline",
+    "path": "@/components/timeline/3DStackTimeline",
+    "propsSchema": {
+      "items": "Array<{ id: number; title: string; description: string; image: string; }>",
+      "className": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "id": 1,
+            "title": "string",
+            "description": "string",
+            "image": "string"
+          }
+        ],
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import ProcessTimeline from '@/components/timeline/ProcessTimeline';",
+    "name": "ProcessTimeline",
+    "path": "@/components/timeline/ProcessTimeline",
+    "propsSchema": {},
+    "example": [
+      {}
+    ]
+  },
+  {
+    "import": "import StackTimeline from '@/components/timeline/StackTimeline';",
+    "name": "StackTimeline",
+    "path": "@/components/timeline/StackTimeline",
+    "propsSchema": {
+      "items": "Array<{ id: number; title: string; description: string; image: string; }>",
+      "className": "string",
+      "sectionClassName": "string",
+      "backgroundColor": "string",
+      "backgroundPattern": "string",
+      "gradient": "{ radialColor: string; linearColor: string; radialOpacity: string; linearOpacity: string; rounded: string; }",
+      "gapClassName": "string",
+      "cardClassName": "string",
+      "cardHeight": "string",
+      "cardStickyPosition": "string",
+      "stepNumberClassName": "string",
+      "stepNumberSize": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string",
+      "contentGapClassName": "string",
+      "imageContainerClassName": "string",
+      "imageClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "id": 1,
+            "title": "string",
+            "description": "string",
+            "image": "string"
+          }
+        ],
+        "className": "custom-class",
+        "sectionClassName": "string",
+        "backgroundColor": "string",
+        "backgroundPattern": "string",
+        "gradient": {
+          "radialColor": "string",
+          "linearColor": "string",
+          "radialOpacity": "string",
+          "linearOpacity": "string",
+          "rounded": "string"
+        },
+        "gapClassName": "string",
+        "cardClassName": "string",
+        "cardHeight": "string",
+        "cardStickyPosition": "string",
+        "stepNumberClassName": "string",
+        "stepNumberSize": "string",
+        "titleClassName": "string",
+        "descriptionClassName": "string",
+        "contentGapClassName": "string",
+        "imageContainerClassName": "string",
+        "imageClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import Timeline from '@/components/timeline/Timeline';",
+    "name": "Timeline",
+    "path": "@/components/timeline/Timeline",
+    "propsSchema": {
+      "items": "Array<{ title: string; description: string; video: string; image: string; }>",
+      "title": "string",
+      "titleConfig": "{ text: string; className: string; shadowColor: string; shadowOffset: string; animationProps: { duration: number; stagger: number; start: string; end: string; variant: 'scrub' | 'trigger' | 'words-scrub' | 'words-trigger'; }; gradientColors: { from: string; to: string; }; }",
+      "className": "string",
+      "sectionClassName": "string",
+      "backgroundColor": "string",
+      "backgroundPattern": "string",
+      "gradient": "{ radialColor: string; linearColor: string; radialOpacity: string; linearOpacity: string; rounded: string; }",
+      "gapClassName": "string",
+      "paddingClassName": "string",
+      "cardClassName": "string",
+      "imageContainerClassName": "string",
+      "mediaClassName": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string",
+      "sectionTitleClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "description": "string",
+            "video": "string",
+            "image": "string"
+          }
+        ],
+        "title": "Title",
+        "titleConfig": {
+          "text": "string",
+          "className": "string",
+          "shadowColor": "string",
+          "shadowOffset": "string",
+          "animationProps": {
+            "duration": 1,
+            "stagger": 1,
+            "start": "string",
+            "end": "string",
+            "variant": "scrub"
+          },
+          "gradientColors": {
+            "from": "string",
+            "to": "string"
+          }
+        },
+        "className": "custom-class",
+        "sectionClassName": "string",
+        "backgroundColor": "string",
+        "backgroundPattern": "string",
+        "gradient": {
+          "radialColor": "string",
+          "linearColor": "string",
+          "radialOpacity": "string",
+          "linearOpacity": "string",
+          "rounded": "string"
+        },
+        "gapClassName": "string",
+        "paddingClassName": "string",
+        "cardClassName": "string",
+        "imageContainerClassName": "string",
+        "mediaClassName": "string",
+        "titleClassName": "string",
+        "descriptionClassName": "string",
+        "sectionTitleClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import YearTimeline from '@/components/timeline/YearTimeline';",
+    "name": "YearTimeline",
+    "path": "@/components/timeline/YearTimeline",
+    "propsSchema": {
+      "items": "Array<{ year: string; title: string; description: string; }>",
+      "className": "string",
+      "sectionClassName": "string",
+      "backgroundColor": "string",
+      "backgroundPattern": "string",
+      "gradient": "{ radialColor: string; linearColor: string; radialOpacity: string; linearOpacity: string; rounded: string; }",
+      "showAurora": "boolean",
+      "lineClassName": "string",
+      "activeLineClassName": "string",
+      "dotClassName": "string",
+      "yearClassName": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string",
+      "gapClassName": "string",
+      "paddingClassName": "string",
+      "marginClassName": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "year": "string",
+            "title": "string",
+            "description": "string"
+          }
+        ],
+        "className": "custom-class",
+        "sectionClassName": "string",
+        "backgroundColor": "string",
+        "backgroundPattern": "string",
+        "gradient": {
+          "radialColor": "string",
+          "linearColor": "string",
+          "radialOpacity": "string",
+          "linearOpacity": "string",
+          "rounded": "string"
+        },
+        "showAurora": true,
+        "lineClassName": "string",
+        "activeLineClassName": "string",
+        "dotClassName": "string",
+        "yearClassName": "string",
+        "titleClassName": "string",
+        "descriptionClassName": "string",
+        "gapClassName": "string",
+        "paddingClassName": "string",
+        "marginClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import HorizontalTimeline from '@/components/timeline/horizontalTimeline/HorizontalTimeline';",
+    "name": "HorizontalTimeline",
+    "path": "@/components/timeline/horizontalTimeline/HorizontalTimeline",
+    "propsSchema": {
+      "items": "Array<{ title: string; description: string; video: string; image: string; }>",
+      "className": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "description": "string",
+            "video": "string",
+            "image": "string"
+          }
+        ],
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import ContentBlock from '@/components/timeline/phoneTimeline/ContentBlock';",
+    "name": "ContentBlock",
+    "path": "@/components/timeline/phoneTimeline/ContentBlock",
+    "propsSchema": {
+      "item": "PhoneTimelineItem",
+      "titleRef": "(el: HTMLHeadingElement | null) => void",
+      "descriptionRef": "(el: HTMLParagraphElement | null) => void",
+      "containerClassName": "string",
+      "wrapperClassName": "string",
+      "titleClassName": "string",
+      "descriptionClassName": "string"
+    },
+    "example": [
+      {
+        "item": null,
+        "titleRef": "() => {}",
+        "descriptionRef": "() => {}",
+        "containerClassName": "string",
+        "wrapperClassName": "string",
+        "titleClassName": "string",
+        "descriptionClassName": "string"
+      }
+    ]
+  },
+  {
+    "import": "import PhoneFrame from '@/components/timeline/phoneTimeline/PhoneFrame';",
+    "name": "PhoneFrame",
+    "path": "@/components/timeline/phoneTimeline/PhoneFrame",
+    "propsSchema": {
+      "imageSrc": "string",
+      "imageRef": "(el: HTMLDivElement | null) => void",
+      "className": "string",
+      "altText": "string"
+    },
+    "example": [
+      {
+        "imageSrc": "/images/logo.svg",
+        "imageRef": "() => {}",
+        "className": "custom-class",
+        "altText": "string"
+      }
+    ]
+  },
+  {
+    "import": "import PhoneTimeline from '@/components/timeline/phoneTimeline/PhoneTimeline';",
+    "name": "PhoneTimeline",
+    "path": "@/components/timeline/phoneTimeline/PhoneTimeline",
+    "propsSchema": {
+      "items": "Array<PhoneTimelineItem>"
+    },
+    "example": [
+      {
+        "items": [
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "import": "import PopupTimeline from '@/components/timeline/popupTimeline/PopupTimeline';",
+    "name": "PopupTimeline",
+    "path": "@/components/timeline/popupTimeline/PopupTimeline",
+    "propsSchema": {
+      "items": "Array<{ title: string; description: string; video: string; image: string; }>",
+      "title": "string",
+      "className": "string"
+    },
+    "example": [
+      {
+        "items": [
+          {
+            "title": "string",
+            "description": "string",
+            "video": "string",
+            "image": "string"
+          }
+        ],
+        "title": "Title",
+        "className": "custom-class"
+      }
+    ]
+  },
+  {
+    "import": "import TimelinePopup from '@/components/timeline/popupTimeline/TimelinePopup';",
+    "name": "TimelinePopup",
+    "path": "@/components/timeline/popupTimeline/TimelinePopup",
+    "propsSchema": {
+      "isOpen": "boolean",
+      "item": "{ title: string; description: string; video: string; image: string; } | null",
+      "onClose": "() => void"
+    },
+    "example": [
+      {
+        "isOpen": true,
+        "item": null,
+        "onClose": "() => {}"
+      }
+    ]
+  }
+]
